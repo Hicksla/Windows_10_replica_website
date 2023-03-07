@@ -1,0 +1,162 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Taskbar {
+  background-color: green;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.startButton {
+  background-color: rgba(0, 0, 255, 0.8);
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.timeAndDate {
+  height: calc(100% - 10px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #222;
+  font-size: 15px;
+  line-height: 30px;
+  cursor: default;
+}
+
+.startMenu {
+  background-color: rgba(200, 200, 255, 0.9);
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 300px;
+  height: 0px;
+  z-index: 999;
+}
+
+.startButton:hover .startMenu {
+  height: 450px;
+}
+
+.headerText {
+  height: 100%;
+  line-height: 75px;
+}
+
+.startButton:hover .startMenu .startMenuControl {
+  display: block;
+}
+
+.startMenuControls {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: blueviolet;
+}
+
+.startMenuControl {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: none;
+  position: absolute;
+  padding: 0;
+  left: 5px;
+}
+
+.startMenuControl * {
+  margin: 3px 0;
+}
+
+.menuSettings {
+  top: 5px;
+}
+
+.profile {
+  bottom: 110px;
+}
+
+.fileExplorer {
+  bottom: 75px;
+}
+
+.settings {
+  bottom: 40px;
+}
+
+.power {
+  bottom: 5px;
+}
+
+.startButton:hover .startMenu .startMenuApplications {
+  display: block;
+}
+
+.startMenuApplications {
+  position: relative;
+  left: 50px;
+  top: 10px;
+  display: none;
+}
+
+.startMenuApplications * {
+  font-size: 15px;
+  text-align: left;
+  color: blue;
+  width: 200px;
+}
+
+.recentlyUsed div {
+  background-color: rgba(10, 10, 10, 0.1);
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.window {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  resize: both;
+  cursor: pointer;
+}
+
+.windowHeader {
+  width: calc(100% - 2px);
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  font-size: 20px;
+  border: 1px solid black;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.windowHeader button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.windowTitle {
+  width: calc(100% - 65px);
+  height: 20px;
+  position: absolute;
+  word-wrap: break-word;
+  left: 5px;
+  text-align: left;
+  background-color: red;
+}
